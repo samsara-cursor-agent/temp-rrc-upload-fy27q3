@@ -1,0 +1,43 @@
+""
+Universe
+"• FY27 Q3 Closed Won renewals (is_renewal = TRUE), excl. INVENTORYPARENT"
+"• New / specialist-relevant products only (AIM/360, AM, CN, Fleet Apps, AT, ST, R&D-led lines)"
+• ACV field: acv_total_price_bookings_usd_converted (gross product)
+""
+How we identify net-new on a renewal shell
+1. Compare renewal product qty vs prior Closed Won qty on the same account + same product_line (close before this renewal).
+2. Incremental qty = opp_qty − prior_qty.
+3. Recommended rule: count only when incremental qty > 10 (drops micro-uplifts like River Run / ILIF-style noise).
+4. Net-business NNACV = product_acv × (incr_qty / opp_qty).
+""
+Smart Trailers conversions (PE / UE / AT → ST)
+• Flag when prior PE/UE/AT license_end is within ±90 days of ST close AND source qty ≥ 50% of ST qty.
+• Upper-bound reporting: count full ST product ACV as accretive (shown in Summary with “of which” breakout).
+• Policy note: license upgrades credit original ACV to Renewal AE; NB AE gets price uplift only — uplift-only not yet computed.
+• Conservative path (excl. conversions) is available in the Opportunities “counted” flag / rationale.
+""
+Specialist mapping
+• Account owner (generalist AE) employee_id × product → specialist_mainline_ae_mapping for FY27 Q3.
+• AIM + 360 mapping covers AI Multicam and 360 Visibility.
+• Unmapped = no specialist seat mapped to that generalist × product for the quarter.
+""
+People fields on Opportunities tab
+• Renewal SE = opportunity owner (typically Renewals).
+• Generalist AE = account owner.
+• Specialist AE = mapped specialist for that product (blank if unmapped).
+""
+Column definitions (Opportunities)
+• NNACV (product on renewal) = full product ACV sitting on the renewal shell.
+• Net-business NNACV = incremental portion counted as new business under the >10 rule (incl. ST conversions at full ACV).
+• Split New / Split Renewal = SFDC reverse-churn split fields when Renewal Ops has already applied a split.
+• Rationale = why the row is (or is not) treated as new business.
+""
+What this is NOT
+• Not Xactly / commission payout. Not PSS pacing credit (PSS still excludes is_renewal = TRUE today).
+• Reverse Churn form still required for official AE/specialist credit splits.
+• Form: https://docs.google.com/forms/d/1t7pfh-P5bRaVvXnC7uSO8pCV-SqvYx1eYzgrEVZErYs/edit
+""
+Sources
+• businessdbs.revops_maad_data_store.rpt_sfdc_opportunity / _product / _account / _user
+• businessdbs.revops_playground.specialist_mainline_ae_mapping
+• businessdbs.revops_playground.sq_product_target_finance_v (Reforecast)
