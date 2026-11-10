@@ -1,1 +1,43 @@
-placeholder
+Renewal Reverse Churn — Net-New on Renewal Shells (FY27 Q3),,,,,,,
+Closed Won renewals only · ACV basis: acv_total_price_bookings_usd_converted · Reforecast: Finance sq_product_target_finance_v FY27 Q3 · Built 2026-11-09,,,,,,,
+,,,,,,,
+1) Incremental unit threshold scenarios (Closed Won),,,,,,,
+Each scenario counts product lines where (renewal qty − prior same-product CW qty on account) > N. Smart Trailers PE/UE/AT conversions included at full ST ACV in every scenario (upper-bound). Recommended operating rule = > 10 units.,,,,,,,
+,,,,,,,
+Scenario,Unit threshold N,# Opps,# Product lines,Net-business NNACV,Specialist-mapped ACV,Unmapped ACV,% of Global NP reforecast
+> 1 units,1,172,209,1995563,1112739,882824,0.05162507127165183
+> 2 units,2,171,207,1994078,1112739,881339,0.05158665442846603
+> 3 units,3,169,204,1992270,1112478,879792,0.05153988159851321
+> 4 units,4,169,202,1989716,1112478,877238,0.05147380980221922
+> 5 units,5,168,198,1985017,1111168,873849,0.05135224701021241
+> 6 units,6,167,197,1984330,1110481,873849,0.05133447436962747
+> 7 units,7,165,193,1976921,1107121,869800,0.05114280407254756
+> 8 units,8,165,192,1971545,1107121,864424,0.05100372733923651
+> 9 units,9,164,191,1971116,1107121,863995,0.05099262914009394
+> 10 units  ← recommended,10,149,173,1943862,1088071,855791,0.05028757012044004
+,,,,,,,
+,,,,,,,
+2) Closed Won — ACV as % of product global reforecast (threshold > 10 units),,,,,,,
+Includes ST PE/UE/AT conversions as fully accretive; “of which” breakout under Smart Trailers.,,,,,,,
+,,,,,,,
+Product,Opps,Net-business NNACV,Specialist-mapped,Unmapped,Global reforecast (FY27 Q3),% of global reforecast,
+Smart Trailers,95,878563,547995,330568,2638524,0.3329751785467936,
+  Of which: ST replacing expiring PE / UE / AT,91,847720,—,—,—,—,
+  ST true net-new (excl. conversions),4,30843,—,—,—,—,
+Asset Tag,21,332328,275237,57091,7471664,0.04447844549754914,
+AIM + 360,21,335535,2964,332571,17099292,0.01962274227494331,
+Asset Maintenance,10,242626,203479,39147,4944888,0.04906602535790497,
+Fleet Apps,5,68253,39483,28770,n/a,n/a,
+R&D-Led,6,80519,18913,61606,4284039,0.01879511367660285,
+Commercial Navigation,1,6038,0,6038,2216513,0.002724098617964343,
+TOTAL,149,1943862,1088071,855791,38654920,0.05028757012044004,
+,,,,,,,
+3) ACV by product — Specialist-mapped vs Unmapped (same >10 rule),,,,,,,
+Product,Net-business NNACV,Specialist-mapped,Unmapped,% Specialist-mapped,,,
+Smart Trailers,878563,547995,330568,0.6237401301898668,,,
+Asset Tag,332328,275237,57091,0.8282088779759755,,,
+AIM + 360,335535,2964,332571,0.008833653717197907,,,
+Asset Maintenance,242626,203479,39147,0.8386529061188825,,,
+Fleet Apps,68253,39483,28770,0.5784800668102501,,,
+R&D-Led,80519,18913,61606,0.2348886598194215,,,
+Commercial Navigation,6038,0,6038,0,,,
